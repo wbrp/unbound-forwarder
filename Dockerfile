@@ -12,6 +12,5 @@ RUN chmod +x /run.sh
 RUN unbound-checkconf
 
 EXPOSE 53/udp
-EXPOSE 53
 
 CMD ["/run.sh"]
