@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
-echo "  forward-addr: ${forwarder}" >> /etc/unbound/unbound.conf
+echo "  forward-addr: ${FORWARDER_IP}" >> /etc/unbound/unbound.conf
 exec unbound

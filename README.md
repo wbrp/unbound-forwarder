@@ -12,4 +12,4 @@ When running the container, you need to pass an IP address to which queries shou
 forwarded to:
 
     $ export FORWARDER_IP=10.0.0.1
-    $ docker run -p 53:53/udp -e forwarder=$FORWARDER_IP unbound-forwarder:latest
+    $ docker run -p 53:53/udp -e FORWARDER_IP=$FORWARDER_IP unbound-forwarder:latest
